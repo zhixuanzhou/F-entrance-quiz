@@ -20,7 +20,7 @@ class MembersList extends Component {
           ))}
         </section>
 
-        <button onClick={() => this.props.callBack(this.state)}>
+        <button type="submit" onClick={() => this.props.callBack(this.state)}>
           + 添加学员
         </button>
       </div>

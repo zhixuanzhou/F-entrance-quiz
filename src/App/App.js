@@ -23,8 +23,8 @@ class App extends Component {
         { id: 13, name: '哪吒' },
         { id: 14, name: '大乔' },
         { id: 15, name: '蔡文姬' },
-      ],
-    };
+      ]
+    }
   }
 
   render() {
