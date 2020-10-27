@@ -6,9 +6,16 @@ class MembersList extends Component {
     return (
       <div>
         <h2>学员列表</h2>
+
         <section>
-          <Card id="1" name="成吉思汗" />
+          {this.props.members.map((member) => (
+            <Card id={member.id} name={member.name} />
+          ))}
         </section>
+
+        <button className="group-button" type="button">
+          + 添加学员
+        </button>
       </div>
     );
   }
