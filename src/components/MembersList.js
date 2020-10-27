@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import Card from './Card';
 
 class MembersList extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {id:"16", name:"我要选李白"};
+    }
+
+
   render() {
     return (
       <div>
@@ -13,7 +20,7 @@ class MembersList extends Component {
           ))}
         </section>
 
-        <button className="group-button" type="button">
+        <button onClick={() => this.props.callBack(this.state)}>
           + 添加学员
         </button>
       </div>

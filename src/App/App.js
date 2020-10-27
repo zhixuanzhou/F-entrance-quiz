@@ -31,7 +31,11 @@ class App extends Component {
     return (
       <div data-testid="app" className="App">
         <GroupList />
-        <MembersList members={this.state.members} />
+        <MembersList 
+        members={this.state.members} 
+        callBack={(member) => {
+                    this.setState((pre) => ({member: [...pre.members, member]}));
+        }}/>
       </div>
     );
   }
