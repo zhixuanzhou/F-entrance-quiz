@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from './Card';
 
+// TODO GTB-知识点: - 从设计思路上说，应该要存在一个Group的组件，然后GroupList应该是由多个Group组成
 class GroupList extends Component {
   render() {
     return (

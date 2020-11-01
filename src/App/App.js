@@ -34,6 +34,9 @@ class App extends Component {
         <MembersList 
         members={this.state.members} 
         callBack={(member) => {
+          // TODO GTB-知识点: - syntax error: 你的state上面的定义的变量是members,不是member
+          // TODO GTB-知识点: - 不建议给回调函数直接传入一个新的方法定义，这样会有性能问题
+          // TODO GTB-工程实践: - callBack这个prop的命名没有体现业务逻辑
                     this.setState((pre) => ({member: [...pre.members, member]}));
         }}/>
       </div>
